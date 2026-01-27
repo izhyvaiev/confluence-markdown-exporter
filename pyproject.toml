@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "confluence-markdown-exporter"
-version = "3.0.5"
+version = "3.2.0"
 description = "A tool to export Confluence pages to Markdown"
 keywords = ["confluence", "atlassian", "markdown", "export", "convertion", "download"]
 readme = "README.md"
@@ -16,7 +16,6 @@ requires-python = ">= 3.10"
 dependencies = [
     'atlassian-python-api',
     'jmespath',
-    'lxml',
     'markdownify',
     'pydantic-settings',
     'pyyaml',
@@ -25,6 +24,7 @@ dependencies = [
     'tqdm',
     'typer',
     'python-dateutil',
+    "lxml>=6.0.2",
 ]
 
 
